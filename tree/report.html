@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CA2 Report</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm;
+            background-color: #f9f9f9;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            color: #2c3e50;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        .page {
+            page-break-after: always;
+            position: relative;
+            height: 250mm;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .header-title {
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .header-title h2 {
+            margin: 0;
+            color: #2980b9;
+            font-size: 16pt;
+        }
+        .header-title h3 {
+            margin: 5px 0 0 0;
+            font-size: 13pt;
+            color: #7f8c8d;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .toc {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .toc h3 {
+            margin-top: 0;
+            color: #e67e22;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .section-title {
+            color: #c0392b;
+            border-left: 5px solid #c0392b;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+        .highlight-blue {
+            color: #2980b9;
+            font-weight: bold;
+        }
+        .highlight-green {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .highlight-orange {
+            color: #d35400;
+            font-weight: bold;
+        }
+        .highlight-purple {
+            color: #8e44ad;
+            font-weight: bold;
+        }
+        .highlight-yellow {
+            color: #f39c12;
+            font-weight: bold;
+        }
+        .box {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .page-number {
+            position: absolute;
+            bottom: -10mm;
+            width: 100%;
+            text-align: center;
+            font-size: 10pt;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="header-title">
+            <h2>GOVERNMENT COLLEGE OF ENGINEERING AND LEATHER TECHNOLOGY</h2>
+            <h3>Department of Computer Science and Engineering</h3>
+            <h4>CONTINUOUS ASSESSMENT 2 (CA2)</h4>
+        </div>
+
+        <table>
+            <tr>
+                <th width="30%">Field</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td><strong>Name:</strong></td>
+                <td>Sabyasachi Ghosh</td>
+            </tr>
+            <tr>
+                <td><strong>Roll No.:</strong></td>
+                <td>11200224036</td>
+            </tr>
+            <tr>
+                <td><strong>Registration No.:</strong></td>
+                <td>241120110117</td>
+            </tr>
+            <tr>
+                <td><strong>Semester:</strong></td>
+                <td>4th Semester</td>
+            </tr>
+            <tr>
+                <td><strong>Semester Year:</strong></td>
+                <td>2025-2026</td>
+            </tr>
+            <tr>
+                <td><strong>Subject Name:</strong></td>
+                <td>Computer Architecture</td>
+            </tr>
+            <tr>
+                <td><strong>Subject Code:</strong></td>
+                <td>PCC-CS402</td>
+            </tr>
+        </table>
+
+        <div class="toc">
+            <h3>📑 Table of Contents</h3>
+            <div class="toc-item"><span><strong>1. Introduction</strong> (Origin and Essentials)</span> <span>Page 2</span></div>
+            <div class="toc-item"><span><strong>2. Body</strong> (Main Report: Flynn's Taxonomy & Architectures)</span> <span>Page 3</span></div>
+            <div class="toc-item"><span><strong>3. Body</strong> (Metrics, Laws, and Interconnection)</span> <span>Page 4</span></div>
+            <div class="toc-item"><span><strong>4. Conclusion</strong> (Inferences)</span> <span>Page 5</span></div>
+            <div class="toc-item"><span><strong>5. References</strong> (Sources of Information)</span> <span>Page 5</span></div>
+        </div>
+        <div class="page-number">Page 1</div>
+    </div>
+
+    <div class="page">
+        <h2 class="section-title">1. INTRODUCTION</h2>
+        
+        <div class="box">
+            <h3 style="color: #2c3e50;">Origin of Parallel Computing</h3>
+            <p>In the traditional Von Neumann architecture, a single CPU executes instructions sequentially. While foundational, as computational demands in fields like Artificial Intelligence (AI) and Big Data surged, this serial execution model became a severe bottleneck. Parallel Computing evolved as the solution, allowing many calculations or processes to be carried out simultaneously. Large problems are fractured into smaller, independent parts that multiple processing units solve at the same time. The primary goal is to maximize throughput and drastically reduce execution time.</p>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #2c3e50;">Essentials of the Main Subject</h3>
+            <p>Understanding parallel architecture relies on two fundamental components:</p>
+            <ul>
+                <li><span class="highlight-blue">Instruction Stream:</span> The sequence of commands fetched from memory.</li>
+                <li><span class="highlight-blue">Data Stream:</span> The set of operands or input data being manipulated by those instructions.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #2c3e50;">The Paradigm Shift: Why Parallelism?</h3>
+            <ul>
+                <li><span class="highlight-green">Speedup:</span> Distributing tasks across multiple processors slashes execution time.</li>
+                <li><span class="highlight-green">Cost Effectiveness:</span> Networking multiple off-the-shelf processors is much cheaper than engineering a single, ultra-powerful processor.</li>
+                <li><span class="highlight-green">Scalability:</span> Parallel systems seamlessly scale up by adding more processing nodes to handle larger datasets.</li>
+                <li><span class="highlight-green">Complexity:</span> Modern, complex simulations (like climate modeling) mathematically cannot be solved on a single core within a reasonable timeframe.</li>
+            </ul>
+        </div>
+        <div class="page-number">Page 2</div>
+    </div>
+
+    <div class="page">
+        <h2 class="section-title">2. BODY (Main Report)</h2>
+        
+        <p><strong>Flynn's Taxonomy: The Four Architectures</strong><br>
+        Introduced by Michael J. Flynn in 1966, this universally accepted taxonomy categorizes architectures strictly based on the number of instruction and data streams.</p>
+
+        <div class="box">
+            <h3 style="color: #8e44ad;">I. SISD (Single Instruction, Single Data)</h3>
+            <p>This is the standard uniprocessor model, representing essentially non-parallel computing.</p>
+            <ul>
+                <li><strong>Operation:</strong> One Control Unit (CU) fetches instructions sequentially for one Processing Element (PE) to execute on a single piece of data.</li>
+                <li><strong>Limitation:</strong> It is bottlenecked by the data transfer rate between the CPU and memory (the "Von Neumann Bottleneck").</li>
+                <li><strong>Example:</strong> Traditional microprocessors like the 8085 or early single-core CPUs.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #8e44ad;">II. SIMD (Single Instruction, Multiple Data)</h3>
+            <p>This architecture is the champion of <span class="highlight-orange">"Data Parallelism."</span></p>
+            <ul>
+                <li><strong>Operation:</strong> A single control unit broadcasts the exact same instruction to multiple processing elements, which apply it to different data points simultaneously.</li>
+                <li><strong>Advantage:</strong> Highly efficient for vector math, such as applying a color filter to every pixel in an image at once.</li>
+                <li><strong>Example:</strong> Graphics Processing Units (GPUs) and Vector Processors.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #8e44ad;">III. MISD (Multiple Instruction, Single Data)</h3>
+            <p>A rare architecture primarily utilized for high-reliability and fault-tolerant systems.</p>
+            <ul>
+                <li><strong>Operation:</strong> Multiple separate processors run different instructions or algorithms on the exact same data stream to cross-verify results.</li>
+                <li><strong>Example:</strong> Space mission flight computers checking sensor data.</li>
+            </ul>
+        </div>
+        <div class="page-number">Page 3</div>
+    </div>
+
+    <div class="page">
+        <h2 class="section-title">3. BODY (Continued)</h2>
+
+        <div class="box" style="border-left: 4px solid #8e44ad;">
+            <h3 style="color: #8e44ad;">IV. MIMD (Multiple Instruction, Multiple Data)</h3>
+            <p>The most flexible and widely adopted parallel architecture today. Each processor asynchronously fetches its own instructions and operates on its own data.</p>
+            <ul>
+                <li><span class="highlight-orange">Shared Memory (Multiprocessors):</span> All processors access a single, global memory space. Communication is very fast, but hardware complexity spikes with more cores.</li>
+                <li><span class="highlight-orange">Distributed Memory (Multicomputers):</span> Each processor has its own local memory and communicates via network messaging. Highly scalable (e.g., Google's server clusters).</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #2c3e50;">Parallel Processing Performance Metrics</h3>
+            <ul>
+                <li><span class="highlight-purple">Speedup (S):</span> The ratio of time taken by a serial computer versus a parallel computer for the same task. Formula: <strong>S = T(serial) / T(parallel)</strong>.</li>
+                <li><span class="highlight-purple">Efficiency (E):</span> Speedup divided by the number of processors. It evaluates how well the hardware is actually being utilized.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 style="color: #2c3e50;">Amdahl's Law vs Gustafson's Law</h3>
+            <ul>
+                <li><span class="highlight-yellow">Amdahl's Law:</span> Claims speedup is strictly limited by the sequential (non-parallelizable) portion of the code. (e.g., if 10% is sequential, max speedup is 10x, regardless of processor count).</li>
+                <li><span class="highlight-yellow">Gustafson's Law:</span> Suggests that as we add more processors, we solve much larger problems in the same timeframe, scaling the workload rather than just shrinking the time.</li>
+            </ul>
+        </div>
+
+        <h3 style="color: #2c3e50;">Summary of Flynn's Classification</h3>
+        <table>
+            <tr>
+                <th>ARCHITECTURE</th>
+                <th>INSTRUCTIONS</th>
+                <th>DATA</th>
+                <th>NATURE</th>
+                <th>KEY EXAMPLE</th>
+            </tr>
+            <tr>
+                <td><strong>SISD</strong></td>
+                <td>Single</td>
+                <td>Single</td>
+                <td>Sequential / Serial</td>
+                <td>PC Microprocessors</td>
+            </tr>
+            <tr>
+                <td><strong>SIMD</strong></td>
+                <td>Single</td>
+                <td>Multiple</td>
+                <td>Data Parallelism</td>
+                <td>GPUs/Vector CPUs</td>
+            </tr>
+            <tr>
+                <td><strong>MISD</strong></td>
+                <td>Multiple</td>
+                <td>Single</td>
+                <td>Fault Tolerance</td>
+                <td>Space Shuttle PCs</td>
+            </tr>
+            <tr>
+                <td><strong>MIMD</strong></td>
+                <td>Multiple</td>
+                <td>Multiple</td>
+                <td>Task Parallelism</td>
+                <td>Multi-core/ Clusters</td>
+            </tr>
+        </table>
+        <div class="page-number">Page 4</div>
+    </div>
+
+    <div class="page" style="page-break-after: auto;">
+        
+        <div class="box" style="margin-bottom: 20px;">
+            <h3 style="color: #2c3e50;">Interconnection Networks</h3>
+            <p>Processors in MIMD systems require robust physical connections:</p>
+            <ul>
+                <li><span style="font-weight: bold;">Static Networks:</span> Fixed point-to-point links (e.g., Linear, Ring, Star, Mesh).</li>
+                <li><span style="font-weight: bold;">Dynamic Networks:</span> Flexible connections established on-the-fly using switches (e.g., Bus, Crossbar).</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">4. CONCLUSION</h2>
+        <div class="box">
+            <h3 style="color: #2c3e50;">Inferences</h3>
+            <p>Flynn's classification provides a fundamental and enduring framework for understanding the landscape of modern computing architecture. As the tech industry aggressively scales towards Exascale computing and highly complex AI models, distinguishing and practically utilizing these architectural differences becomes crucial. For a Computer Science engineer, deeply mastering these concepts is essential. It enables the writing of highly optimized, efficient code capable of fully leveraging the massive power of modern parallel hardware—ranging from local multi-core laptops to massive, distributed cloud infrastructures.</p>
+        </div>
+
+        <h2 class="section-title" style="border-left-color: #34495e; color: #34495e;">5. REFERENCES</h2>
+        <div class="box">
+            <p><em>(Note: Since the original provided text did not include a bibliography, the following are standard academic references applicable to the content discussed in this report).</em></p>
+            <ol>
+                <li>Flynn, M. J. (1972). "Some Computer Organizations and Their Effectiveness." <em>IEEE Transactions on Computers</em>.</li>
+                <li>Patterson, D. A., & Hennessy, J. L. (2013). <em>Computer Organization and Design: The Hardware/Software Interface</em>. Morgan Kaufmann.</li>
+                <li>Mano, M. M. (1992). <em>Computer System Architecture</em>. Prentice-Hall.</li>
+            </ol>
+        </div>
+        <div class="page-number">Page 5</div>
+    </div>
+
+</body>
+</html>
